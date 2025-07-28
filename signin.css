@@ -1,0 +1,102 @@
+body {
+      margin: 0;
+      padding: 0;
+      background: #000000 !important;
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .login-wrapper {
+      display: flex;
+      width: 90%;
+      max-width: 1000px;
+      background: #111 !important;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 2px 2px 30px 6px rgba(255, 0, 0, 0.2) !important;
+    }
+
+    .login-left {
+      flex: 1;
+      background: url('./images/trend2.jpg') ;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+
+   .logo-text {
+      position: absolute;
+      z-index: 2;
+      top: 13%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .login-right {
+      flex: 1;
+      padding: 50px 40px;
+      background: #000 !important;
+    }
+
+    .form-control {
+      background-color: #111 !important;
+      border: 1px solid #333 !important;
+      color: white !important;
+    }
+
+    .form-control:focus {
+      background-color: #111 !important;
+      border-color: red !important;
+      box-shadow: none;
+      color: white !important;
+    }
+
+    .form-label {
+      color: #ccc !important;
+    }
+
+    .form-icon {
+      color: #ff0000 !important;
+      margin-right: 10px;
+    }
+
+    .btn-login {
+      background-color: red !important;
+      color: white !important;
+      width: 100%;
+    }
+
+    .btn-login:hover {
+      background-color: #cc0000 !important;
+    }
+
+    .forgot {
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      .login-wrapper {
+        flex-direction: column;
+      }
+
+      .login-left,
+      .login-right {
+        width: 100%;
+      }
+
+      .login-left {
+        height: 200px;
+      }
+
+      .logo-text {
+        font-size: 2rem;
+      }
+    }

@@ -1,0 +1,102 @@
+body {
+      margin: 0;
+      padding: 0;
+      background: #000000;
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .login-wrapper {
+      display: flex;
+      width: 90%;
+      max-width: 1000px;
+      background: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
+    }
+
+    .login-left {
+      flex: 1;
+      background: url('./images/formal9.webp') no-repeat center center/cover;
+      position: relative;
+    }
+
+
+    .logo-text {
+      position: absolute;
+      z-index: 2;
+      top: 7%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .login-right {
+      flex: 1;
+      padding: 50px 40px;
+      background: #000;
+    }
+
+    .form-control {
+      background-color: #111;
+      border: 1px solid #333;
+      color: white;
+    }
+
+    .form-control:focus {
+      background-color: #111;
+      border-color: red;
+      box-shadow: none;
+      color: white;
+    }
+
+    .form-label {
+      color: #ccc;
+    }
+
+    .form-icon {
+      color: #ff0000;
+      margin-right: 10px;
+    }
+
+    .btn-login {
+      background-color: red;
+      color: white;
+      width: 100%;
+    }
+
+    .btn-login:hover {
+      background-color: #cc0000;
+    }
+
+    .forgot {
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      .login-wrapper {
+        flex-direction: column;
+      }
+
+      .login-left,
+      .login-right {
+        flex: unset;
+        width: 100%;
+      }
+
+      .login-left {
+        height: 200px;
+      }
+
+      .logo-text {
+        font-size: 2rem;
+      }
+    }

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sandals</title>
+  <link rel="icon" href="./images/sandals12.webp">
+  <link rel="stylesheet" href="./sneakers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><i class="fa-solid fa-shield-halved" style="color: #ffffff;"></i> Shoe-Mart</div>
+    <ul class="nav-links">
+      <li><a href="./home.html">Home</a></li>
+      <li><a href="./aboutus1.html">AboutUs</a></li>
+      <li><a href="./contactus1.html">ContactUs</a></li>
+      <li><a href="./blog1.html">Blog</a></li>
+      <li><a href="./login.html">Logout</a></li>
+      <div class="icons">
+        <div class="nav-icons">
+      <i class="fas fa-shopping-cart" onclick="updateCartPopup()">
+        <span id="cart-count">0</span>
+      </i>
+    </div>
+      </div>
+    </ul>
+  </nav>
+
+  <h1>SANDALS</h1>
+  <div class="product-container">
+
+    <!-- Example Product Card -->
+     <div class="product-card">
+      <img src="./images/sandals1.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals1',199.99,'./images/sandals1.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./images/sandals2.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals2',199.99,'./images/sandals2.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./images/sandals3.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('formal13',199.99,'./images/sandals3.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+     <div class="product-card">
+      <img src="./images/sandals4.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('formal4',199.99,'./images/sandals4.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+      <div class="product-card">
+      <img src="./images/sandals5.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals5',199.99,'./images/sandals5.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+     <div class="product-card">
+      <img src="./images/sandals6.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals6',199.99,'./images/sandals6.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+
+      <div class="product-card">
+      <img src="./images/sandals7.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals7',199.99,'./images/sandals7.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+
+      <div class="product-card">
+      <img src="./images/sandals8.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals8',199.99,'./images/sandals8.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+      <div class="product-card">
+      <img src="./images/sandals9.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals9',199.99,'./images/sandals9.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+
+      <div class="product-card">
+      <img src="./images/sandals10.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals10',199.99,'./images/sandals10.webp')">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+      <div class="product-card">
+      <img src="./images/sandals11.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals11',199.99,'./images/sandals11.webp')">Add to Cart</button>
+       <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+      <div class="product-card">
+      <img src="./images/sandals12.webp" alt="Product">
+      <h2>Sandals</h2>
+      <p class="price">$199.99</p>
+      <p class="desc">Shoes that makes your comfort</p>
+      <div class="stars">★ ★ ★ ★ ☆</div>
+      <div class="btn-group">
+        <button onclick="addToCart('sandals12',199.99,'./images/sandals12.webp')">Add to Cart</button>
+       <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Add to Cart Popup -->
+<div id="cartPopup" class="cart-popup">
+    <span class="close-btn" onclick="closeCart()">&times;</span>
+    <h2>Your Cart</h2>
+    <div id="cartContent"></div>
+    <p id="grandTotal"></p>
+    <button id="checkoutBtn" onclick="goToCheckout()">Checkout</button>
+  </div>
+
+
+  <!-- Buy Now Popup -->
+   <div class="payment" id="paymentBox">
+  <span class="close" id="closeBtn">X</span>
+  <h2 class="payTitle">Checkout</h2>
+
+  <label for="name">Name</label>
+  <input type="text" id="name" class="payInput" placeholder="John Doe" required>
+
+  <label for="email">Email ID</label>
+  <input type="email" id="email" class="payInput" placeholder="john@example.com" required>
+
+  <h3 class="payTitle">Card Information</h3>
+
+  <input type="text" id="cardNumber" class="payInput" placeholder="Card Number" required>
+
+  <div class="cardInfo">
+    <input type="text" id="expMonth" class="payInput sm" placeholder="MM" required>
+    <input type="text" id="expYear" class="payInput sm" placeholder="YYYY" required>
+    <input type="text" id="cvv" class="payInput sm" placeholder="CVV" required>
+  </div>
+
+  <button class="payButton" onclick="handleBuyNow()">Buy Now</button>
+</div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

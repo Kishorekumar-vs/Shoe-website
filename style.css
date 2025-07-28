@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+      background-color: #000 !important;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #990000;
+    }
+    .nav-link {
+      color: white !important;
+      font-size: 16px !important;
+    }
+    .nav-link:hover {
+      color: #ee7f7f !important;
+      border-bottom: 1px solid white;
+    }
+
+  .cart-popup {
+  position: fixed;
+  top: 25%;
+  right: 2%;
+  width: 300px;
+  max-height: 80vh;
+  background-color: #111;
+  border: 2px solid red;
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.cart-popup .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  color: rgb(219, 16, 16) !important;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 10px;
+  align-items: center;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.cart-item-info p {
+  margin: 0.2rem 0;
+}
+
+.quantity-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.quantity-controls button {
+  background-color: red;
+  color: rgb(219, 18, 18) !important;
+  border: none;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#checkoutBtn {
+  background-color: green;
+  color: white !important;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+   /* products */
+
+
+   .category-bar {
+      background: #df7d7d;
+      padding: 15px 20px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .category-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      flex: 1;
+    }
+
+    .category-list li {
+      font-weight: 500;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .category-list li:hover {
+      color: rgb(250, 248, 248);
+    }
+
+    .fa-heart:hover{
+    color: red !important;
+    }
+
+    .fa-cart-shopping:hover{
+     color: rgb(0, 89, 255) !important;
+    }
+/* page4 */
+   .arrival {
+      background-image: url(./images/a2.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 60px 20px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .arrival h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .p1 {
+      background-color: #111;
+      border: 2px solid #ff0000;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .p1:hover {
+      transform: scale(1.03);
+    }
+
+    .p2 {
+      width: 100%;
+      height: auto;
+    }
+
+    .p3 {
+      padding: 20px;
+    }
+
+    .p3 h4 {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    .btn-view {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      transition: 0.3s ease;
+    }
+
+    .btn-view:hover {
+      background-color: #fff;
+      color: #ff0000;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+   /* page5 */
+
+    .card-container {
+      padding: 10px 15px;
+    }
+
+    .shoe-card {
+      position: relative;
+      border: none;
+      border-radius: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .shoe-card img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.9;
+    }
+
+    .card-overlay {
+     
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      /* transition: background 0.3s ease; */
+    }
+
+    .card-overlay h5 {
+      font-weight: bold !important;
+      color: red !important;
+    }
+
+    .card-overlay p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .btn-view {
+      background-color: red !important;
+      color: white !important;
+      border: none;
+      padding: 8px 20px;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-view:hover {
+      background-color: darkred !important;
+      color: white;
+    }
+
+    .shoe-card:hover {
+      transform: scale(1.02);
+    }
+    
+
+    /* page6 */
+
+    .hii{
+    padding: 80px;
+     background:linear-gradient(100deg,red,black);
+   }
+
+   .hii:hover{
+     background:linear-gradient(15deg,black,red);
+   }
+    .image-stack {
+      position: relative;
+    }
+
+    .image-stack img {
+      width: 70%;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .image-stack .img-top {
+      position: absolute;
+      top: 60px;
+      left: 350px;
+      width: 50%;
+      z-index: 2;
+    }
+
+    .cta-box h3 {
+      font-weight: 700;
+      color: rgb(250, 248, 248);
+    }
+
+    .btn-shop {
+      background-color: rgb(245, 129, 129) !important;
+      border: none;
+      color: rgb(10, 9, 9) !important;
+      padding: 10px 25px;
+      border-radius: 5px;
+      font-size: 12px !important;
+      transition: all 0.3s ease;
+    }
+
+    .btn-shop:hover {
+      background-color: rgb(252, 247, 247) !important;
+    }
+
+    /* reviews */
+
+    .old{
+      padding: 20px 0px;
+      background-color: rgb(216, 214, 214,0.1) !important;
+    }
+    
+    .say{
+      color: red !important;
+    }
+    .star{
+      font-size: 20px;
+      color: yellow !important;
+    }
+    /* season */
+    .newSeason {
+  display: flex;
+}
+
+.nsItem {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nsImg {
+  width: 100%;
+  height: 500px;
+}
+
+.nsTitle {
+  font-size: 40px;
+}
+
+.nsButton {
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+    
+    /* footer */
+    .footer {
+      background: #111;
+      color: #fff;
+      padding: 20px 0 5px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .foot{
+      margin-top: 70px !important;
+    }
+
+    .footer h3 {
+      color: #e60000;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .footer a {
+      color: #bbb;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #e60000;
+      padding-left: 6px;
+    }
+
+    .footer .social-icons a {
+      font-size: 18px;
+      color: #fff;
+      margin-right: 15px;
+      transition: 0.3s ease;
+    }
+
+    .footer .social-icons a:hover {
+      color: #e60000;
+      transform: scale(1.2);
+    }
+
+    .footer .subscribe input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      width: 70%;
+    }
+
+    .footer .subscribe button {
+      padding: 10px 15px;
+      background: #e60000;
+      border: none;
+      color: white;
+      border-radius: 0 5px 5px 0;
+      transition: background 0.3s ease;
+    }
+
+    .footer .subscribe button:hover {
+      background: #ff1a1a;
+    }
+
+    .footer .bottom-bar {
+      border-top: 1px solid #333;
+      margin-top: 10px;
+      padding-top: 5px;
+      text-align: center;
+      color: #777;
+    }
+
+    .footer .contact-info i {
+      color: #e60000;
+      margin-right: 8px;
+    }
+
+    .footer-logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .footer-logo span {
+      color: #e60000;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .image-stack .img-top {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+      }
+    }

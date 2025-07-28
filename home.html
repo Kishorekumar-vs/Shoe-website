@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping : Buy your favourite shoes</title>
+  <link rel="icon" href="./images/slip4.webp">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- top bar -->
+  <div class="container">
+    <p class="text-white text-center pt-1 fw-bold">❤️ Welcome !! Get 50% Offer For Your First Order..... ❤️</p>
+  </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fs-1 fw-bold mx-5" href="./home.html"><i class="fa-solid fa-shield-halved" style="color: #ffffff;"></i> Shoe-Mart</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span><i class="fas fa-bars text-white"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link fw-bold" href="./home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="./aboutus1.html">About</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="./contactus1.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="./blog1.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="./login.html" id="logout()">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- products -->
+   <div class="container-fluid w-100" id="hii">
+  <div class="category-bar">
+    
+    <!-- Centered List -->
+    <ul class="category-list">
+      <a href="./sneakers.html" class="text-decoration-none"><li>SNEAKERS</li></a>
+      <a href="./formal.html" class="text-decoration-none"><li>FORMALS SHOES</li></a>
+      <a href="./slip.html" class="text-decoration-none"><li>SLIP-ONS</li></a>
+      <a href="./oxfords.html" class="text-decoration-none"><li>OXFORDS SHOES</li></a>
+      <a href="./sandals.html" class="text-decoration-none"><li>SANDALS</li></a>
+    </ul>
+
+     <div class="nav-icons">
+      <i class="fas fa-shopping-cart" onclick="updateCartPopup()">
+        <span id="cart-count">0</span>
+      </i>
+    </div>
+  </div>
+</div>
+  <!-- carousel -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item ">
+        <a href="./slip.html"><img src="./images/1920X800_Desktop_Banner_2.webp" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item active">
+        <a href="./sneakers.html"><img src="./images/1920X800_Desktop_Banner 4.webp" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item">
+        <a href="./formal.html"><img src="./images/BWT_-_Desktop_Banner.webp" class="d-block w-100" alt="..."></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- page4 -->
+  <section class="arrival text-white mt-3 ">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col">
+          <h2>New Arrivals</h2>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="p1">
+            <img src="./images/a1.jpg" class="p2" alt="Shoe 1">
+            <div class="p3">
+              <h4>AirMax Pro Red</h4>
+              <p>Lightweight, stylish, and built for speed. Perfect for athletes and sneaker lovers.</p>
+              <a href="./sneakers.html"><button class="btn btn-view">View More <strong>→</strong></button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="p1">
+            <img src="./images/a5.jpg" class="p2" alt="Shoe 2">
+            <div class="p3">
+              <h4>Stealth Runner</h4>
+              <p>All-black runner with premium comfort and shock-absorbent sole for daily wear.</p>
+              <a href="./oxfords.html"><button class="btn btn-view">View More <strong>→</strong></button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="p1">
+            <img src="./images/a3.jpg"class="p2" alt="Shoe 3">
+            <div class="p3">
+              <h4>Velocity Boost</h4>
+              <p>Boost your steps with this vibrant red and white trainer engineered for grip and speed.</p>
+              <a href="./slip.html"><button class="btn btn-view">View More <strong>→</strong></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- page5 -->
+  <div class="container-fluid card-container">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <div class="card shoe-card">
+          <img src="./images/sneakers.jpg" alt="Modern Sneakers" style="height: 550px;">
+          <div class="card-overlay">
+            <h5>Casual Sneaker Zone</h5>
+            <p class="text-dark">Step into comfort with our stylish casual sneaker collection. Perfect for wear.</p>
+            <a href="./sneakers.html"><button class="btn btn-view">Explore <strong>→</strong></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shoe-card">
+          <img src="./images/formal11.webp" alt="Luxury Shoe Space" style="height: 550px;">
+          <div class="card-overlay">
+            <h5>Luxury Shoe Space</h5>
+            <p class="text-dark">Experience premium leather shoes crafted for elegance and style. Shop now.</p>
+            <a href="./formal.html"><button class="btn btn-view">Explore <strong>→</strong></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shoe-card">
+          <img src="./images/athelete.jpg" alt="Sporty Footwear" style="height: 550px;">
+          <div class="card-overlay">
+            <h5>Sport Edition Shoes</h5>
+            <p class="text-dark">Run with power in our latest performance sports shoes. Built for athletes.</p>
+           <a href="./sandals.html"><button class="btn btn-view">Explore <strong>→</strong></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- page5 -->
+  <div class="container-fluid hii mt-2 border rounded-3">
+    <div class="row align-items-center">
+      <!-- Image stack -->
+      <div class="col-md-6">
+        <div class="image-stack">
+          <img src="./images/c2.jpg" class="img-bottom" alt="Yellow Shoes">
+          <img src="./images/s5.webp" class="img-top" alt="Red Shoes">
+        </div>
+      </div>
+
+      <!-- Text section -->
+      <div class="col-md-6 text-center  mt-4 mt-md-0 ">
+        <div class="cta-box">
+          <h3>Just Kickin'</h3>
+          <p class="text-light">Explore our Brand New collections !</p>
+          <a href="./sneakers.html"><button class="btn btn-shop mt-2">SHOP NOW <strong>→</strong></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- season -->
+    <div class=" container-fluid mt-3 newSeason">
+        <div class="nsItem">
+            <img src="./images/formal7.webp"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm mt-2">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle mt-3">New Season</h1>
+            <h1 class="nsTitle mt-3">New Collection</h1>
+            <a href="#hii">
+                <button class="nsButton bg-danger rounded-3 mt-3 text-white">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="./images/formal6.webp"
+                alt="" class="nsImg">
+        </div>
+    </div>
+
+  <!-- reviews -->
+  <section class="section old text-center container-fluid" id="hello">
+    <h2 class="say">What Our Customers Say</h2>
+    <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-white">
+        <div class="carousel-item active">
+          <p class="mt-3">"These shoes are amazing! Great quality and look awesome." – Ram</p>
+          <p class="star">★★★★★</p>
+        </div>
+        <div class="carousel-item">
+          <p class="mt-3">"Very stylish and comfortable. Got many compliments!" – Sagar</p>
+          <p class="star">★★★★★</p>
+        </div>
+        <div class="carousel-item">
+          <p class="mt-3">"Very stylish and comfortable. Got many compliments!" – Arjun</p>
+          <p class="star">★★★★★</p>
+        </div>
+        <div class="carousel-item">
+          <p class="mt-3">"Very stylish and comfortable. Got many compliments!" – Vijay</p>
+          <p class="star">★★★★★</p>
+        </div>
+        <div class="carousel-item">
+          <p class="mt-3">"Very stylish and comfortable. Got many compliments!" – Arun</p>
+          <p class="star">★★★★★</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row text-center text-md-start">
+        <!-- Branding -->
+        <div class="col-md-4 mb-4 foot">
+          <div class="footer-logo fs-1"><i class="fa-solid fa-shield-halved" style="color: #ffffff;"></i> Shoe-<span>Mart</span></div>
+          <p class="mt-3">Step into luxury with our premium shoe collections. Crafted for comfort, styled for
+            excellence.</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-4 mb-4">
+          <h3>Quick Links</h3>
+          <div class="row">
+           <div class="col-6">
+              <p><a href="./home.html">Home</a></p>
+              <p><a href="./aboutus1.html">About Us</a></p>
+              <p><a href="./contactus1.html">Contact Us</a></p>
+              <p><a href="./blog1.html">Blog</a></p>
+              <p><a href="./index.html">Signin / Signup</a></p>
+            </div>
+            <div class="col-6">
+              <p><a href="./add.html">Cart</a></p>
+              <p><a href="#hello">Reviews</a></p>
+              <p><a href="./contactus1.html">FAQ</a></p>
+              <p><a href="./contactus1.html">Help Us</a></p>
+              <p><a href="./aboutus1.html">Locations</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="col-md-4 mb-4">
+          <h3>Subscribe</h3>
+          <p>Subscribe to our newsletter for exclusive offers & new arrivals.</p>
+          <form class="subscribe d-flex">
+            <input type="email" placeholder="Your Email" class="form-control w-auto" />
+            <button type="submit" class="fw-bold">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="row text-center mt-4 contact-info">
+        <div class="col-md-4 mb-2">
+          <i class="fas fa-map-marker-alt"></i> 123 Loyal street,chennai-01.
+        </div>
+        <div class="col-md-4 mb-2">
+          <i class="fas fa-phone-alt"></i> +91 98765 43210
+        </div>
+        <div class="col-md-4 mb-2">
+          <i class="fas fa-envelope"></i>  shoemart@gmail.com
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="bottom-bar mt-4">
+        <p class="text-light">&copy; 2025 <span class="text-danger">Shoe-Mart</span>. All Rights Reserved | Privacy Policy </p>
+      </div>
+    </div>
+    
+  </footer>
+    
+
+
+  <!-- Add to Cart Popup -->
+<div id="cartPopup" class="cart-popup text-light">
+    <span class="close-btn" onclick="closeCart()">&times;</span>
+    <h2>Your Cart</h2>
+    <div id="cartContent"></div>
+    <p id="grandTotal"></p>
+    <button id="checkoutBtn" onclick="goToCheckout()">Checkout</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
